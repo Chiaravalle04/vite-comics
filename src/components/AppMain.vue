@@ -15,7 +15,7 @@ export default {
 
   <main>
 
-    <div class="main-container">
+    <div class="general-container">
       <p>Content goes here</p> 
     </div>
 
@@ -27,9 +27,7 @@ export default {
 main {
   background-color: black;
   min-height: 100px;
-  .main-container {
-    width: 80%;
-    margin: 0 auto;
+  .general-container {
     p {
       color: #fff;
       line-height: 100px;

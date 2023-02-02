@@ -15,7 +15,7 @@ export default {
 
   <footer>
 
-    <div class="container-footer">
+    <div class="general-container">
 
         <div class="btn-sign">
             <button>sign-up now!</button>
@@ -64,10 +64,7 @@ export default {
 footer {
     height: 100px;
     background-color: #303131;
-    .container-footer{
-        width: 80%;
-        height: 100%;
-        margin: 0 auto;
+    .general-container{
         display: flex;
         justify-content: space-between;
         align-items: center;

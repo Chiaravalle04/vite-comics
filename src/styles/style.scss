@@ -3,3 +3,10 @@
 
 // Font
 @use './partials/fonts.scss';
+
+// Regole Generali
+.general-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}

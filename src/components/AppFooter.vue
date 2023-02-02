@@ -27,7 +27,7 @@ export default {
 
     <main>
 
-      <div class="main-footer-container">
+      <div class="general-container">
 
         <nav>
 
@@ -157,10 +157,8 @@ main {
   height: 350px;
   background-image: url('../assets/img/footer-bg.jpg');
   background-size: cover;
-  .main-footer-container {
-    width: 80%;
+  .general-container {
     height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     nav {

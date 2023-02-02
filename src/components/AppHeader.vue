@@ -15,7 +15,7 @@ export default {
 
     <header>
 
-        <div class="header-container">
+        <div class="general-container">
 
             <div class="header-logo">
                 <a href="#">
@@ -68,10 +68,7 @@ export default {
 header {
     height: 100px;
     background-color: #fff;
-    .header-container {
-        width: 80%;
-        height: 100%;
-        margin: 0 auto;
+    .general-container {
         display: flex;
         justify-content: space-between;
         .header-logo {
