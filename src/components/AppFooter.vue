@@ -158,7 +158,6 @@ main {
   background-image: url('../assets/img/footer-bg.jpg');
   background-size: cover;
   .general-container {
-    height: 100%;
     display: flex;
     justify-content: space-between;
     nav {

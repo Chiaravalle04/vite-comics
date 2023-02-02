@@ -15,7 +15,7 @@ export default {
 
     <header>
 
-        <div class="general-container">
+        <div class="general-container d-flex jc-space-bet">
 
             <div class="header-logo">
                 <a href="#">
@@ -23,8 +23,8 @@ export default {
                 </a>
             </div>
 
-            <div class="nav-bar">
-                <ul>
+            <div class="nav-bar d-flex ai-center">
+                <ul class="d-flex">
                     <li>
                         <a href="#">characters</a>
                     </li>
@@ -69,8 +69,6 @@ header {
     height: 100px;
     background-color: #fff;
     .general-container {
-        display: flex;
-        justify-content: space-between;
         .header-logo {
             width: 100px;
             padding: 10px;
@@ -80,20 +78,14 @@ header {
         }  
         .nav-bar {
             height: 100%;
-            display: flex;
-            align-items: center;
             ul {
-                list-style: none;
-                display: flex;
                 li {
                     a {
-                        text-decoration: none;
                         text-transform: uppercase;
                         font-size: 10px;
                         padding: 38px 10px;
                         color: black;
                         font-weight: bold;
-
                         &:hover {
                             border-bottom: 4px solid #0383f9;
                             color: #0383f9;
