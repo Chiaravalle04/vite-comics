@@ -15,14 +15,14 @@ export default {
 
   <footer>
 
-    <div class="general-container">
+    <div class="general-container d-flex ai-center jc-space-bet">
 
         <div class="btn-sign">
             <button>sign-up now!</button>
         </div>
 
         <nav>
-            <ul>
+            <ul class="d-flex ai-center">
                 <li>
                     <h3>FOLLOW US</h3> 
                 </li>
@@ -65,9 +65,6 @@ footer {
     height: 100px;
     background-color: #303131;
     .general-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         .btn-sign {
             button {
                 display: inline-block;
@@ -84,9 +81,6 @@ footer {
             height: 100%;
             ul {
                 height: 100%;
-                list-style: none;
-                display: flex;
-                align-items: center;
                 h3 {
                     color: #0383f8;
                     margin-right: 10px;
@@ -98,5 +92,4 @@ footer {
         }
     }
 }
-
 </style>
