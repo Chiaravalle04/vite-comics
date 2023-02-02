@@ -98,7 +98,8 @@ header {
                         font-weight: bold;
 
                         &:hover {
-                            border-bottom: 4px solid blue;
+                            border-bottom: 4px solid #0383f9;
+                            color: #0383f9;
                         }
                     }
                 }
