@@ -1,11 +1,13 @@
 <script>
 import HeaderFooterBar from './HeaderFooterBar.vue';
+import FooterFooter from './FooterFooter.vue'
 
 export default {
   name: 'AppFooter',
 
   components: {
     HeaderFooterBar,
+    FooterFooter,
   },
   
   data() {
@@ -137,12 +139,14 @@ export default {
         </nav>
 
         <div class="img-bg">
-          <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
+
         </div>
 
       </div>
 
     </main>
+
+    <FooterFooter/>
 
   </footer>
 
@@ -166,7 +170,6 @@ main {
       }
       .links {
         padding: 30px 30px 30px 0;
-        // padding-right: 30px;
         h3 {
           text-transform: uppercase;
           color: #eef1fc;
@@ -176,6 +179,9 @@ main {
           text-decoration: none;
           color: #808c8a;
           font-size: 13px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
