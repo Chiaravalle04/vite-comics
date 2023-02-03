@@ -5,6 +5,19 @@ export default {
   data() {
   
     return {
+
+        navHeader: [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ]
   
     }
   }
@@ -25,35 +38,8 @@ export default {
 
             <div class="nav-bar d-flex ai-center">
                 <ul class="d-flex">
-                    <li>
-                        <a href="#">characters</a>
-                    </li>
-                    <li>
-                        <a href="#">comics</a>
-                    </li>
-                    <li>
-                        <a href="#">movies</a>
-                    </li>
-                    <li>
-                        <a href="#">tv</a>
-                    </li>
-                    <li>
-                        <a href="#">games</a>
-                    </li>
-                    <li>
-                        <a href="#">collectibles</a>
-                    </li>
-                    <li>
-                        <a href="#">videos</a>
-                    </li>
-                    <li>
-                        <a href="#">fans</a>
-                    </li>
-                    <li>
-                        <a href="#">news</a>
-                    </li>
-                    <li>
-                        <a href="#">shop</a>
+                    <li v-for="item in navHeader">
+                        <a href="#">{{ item }}</a>
                     </li>
                 </ul>
             </div>

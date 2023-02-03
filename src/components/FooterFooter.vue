@@ -13,50 +13,50 @@ export default {
 
 <template>
 
-  <footer>
+    <footer>
 
-    <div class="general-container d-flex ai-center jc-space-bet">
+        <div class="general-container d-flex ai-center jc-space-bet">
 
-        <div class="btn-sign">
-            <button>sign-up now!</button>
+            <div class="btn-sign">
+                <button>sign-up now!</button>
+            </div>
+
+            <nav>
+                <ul class="d-flex ai-center">
+                    <li>
+                        <h3>FOLLOW US</h3> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-twitter.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-youtube.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-periscope.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
-
-        <nav>
-            <ul class="d-flex ai-center">
-                <li>
-                    <h3>FOLLOW US</h3> 
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/footer-facebook.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/footer-twitter.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/footer-youtube.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/footer-pinterest.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/footer-periscope.png" alt="">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-    </div>
     
-  </footer>
+    </footer>
     
 </template>
 
