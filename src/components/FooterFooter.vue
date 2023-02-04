@@ -5,7 +5,29 @@ export default {
   data() {
   
     return {
-  
+
+        imgSocial: [
+            {
+                img:"../assets/img/footer-facebook.png",
+                url: '#'
+            },
+            {
+                img:"../assets/img/footer-twitter.png",
+                url: '#'
+            },
+            {
+                img:"../assets/img/footer-youtube.png",
+                url: '#'
+            },
+            {
+                img:"../assets/img/footer-pinterest.png",
+                url: '#'
+            },
+            {
+                img:"../assets/img/footer-periscope.png",
+                url: '#'
+            }            
+        ]
     }
   }
 }

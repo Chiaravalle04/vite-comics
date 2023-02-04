@@ -7,16 +7,46 @@ export default {
     return {
 
         navHeader: [
-            'characters',
-            'comics',
-            'movies',
-            'tv',
-            'games',
-            'collectibles',
-            'videos',
-            'fans',
-            'news',
-            'shop'
+            {
+                label: 'characters',
+                url: '#'
+            },
+            {
+                label: 'comics',
+                url: '#'
+            },
+            {
+                label: 'movies',
+                url: '#'
+            },
+            {
+                label: 'tv',
+                url: '#'
+            },
+            {
+                label: 'games',
+                url: '#'
+            },
+            {
+                label: 'collectibles',
+                url: '#'
+            },
+            {
+                label: 'videos',
+                url: '#'
+            },
+            {
+                label: 'fans',
+                url: '#'
+            },
+            {
+                label: 'news',
+                url: '#'
+            },
+            {
+                label: 'shop',
+                url: '#'
+            },
         ]
   
     }
@@ -39,7 +69,7 @@ export default {
             <div class="nav-bar d-flex ai-center">
                 <ul class="d-flex">
                     <li v-for="item in navHeader">
-                        <a href="#">{{ item }}</a>
+                        <a :href="item.url">{{ item.label }}</a>
                     </li>
                 </ul>
             </div>
