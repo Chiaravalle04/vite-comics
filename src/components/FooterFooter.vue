@@ -1,4 +1,10 @@
 <script>
+import facebook from '../assets/img/footer-facebook.png';
+import twitter from '../assets/img/footer-twitter.png';
+import youtube from '../assets/img/footer-youtube.png';
+import pinterest from '../assets/img/footer-pinterest.png';
+import periscope from '../assets/img/footer-periscope.png';
+
 export default {
   name: 'FooterFooter',
   
@@ -6,28 +12,28 @@ export default {
   
     return {
 
-        imgSocial: [
+        images: [
             {
-                img:"../assets/img/footer-facebook.png",
-                url: '#'
+                url: '#', 
+                src: facebook 
+            },
+            { 
+                url: '#', 
+                src: twitter 
             },
             {
-                img:"../assets/img/footer-twitter.png",
-                url: '#'
+                url: '#', 
+                src: youtube 
             },
-            {
-                img:"../assets/img/footer-youtube.png",
-                url: '#'
+            { 
+                url: '#', 
+                src: pinterest 
             },
-            {
-                img:"../assets/img/footer-pinterest.png",
-                url: '#'
-            },
-            {
-                img:"../assets/img/footer-periscope.png",
-                url: '#'
-            }            
-        ]
+            { 
+                url: '#', 
+                src: periscope
+            }
+      ]
     }
   }
 }
@@ -48,29 +54,9 @@ export default {
                     <li>
                         <h3>FOLLOW US</h3> 
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="../assets/img/footer-facebook.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../assets/img/footer-twitter.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../assets/img/footer-youtube.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../assets/img/footer-pinterest.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../assets/img/footer-periscope.png" alt="">
+                    <li v-for="item in images">
+                        <a :href="item.url">
+                            <img :src="item.src" alt="">
                         </a>
                     </li>
                 </ul>

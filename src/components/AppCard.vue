@@ -20,7 +20,7 @@ export default {
 <template>
     
   <div>
-      <img :src="thumb" alt="">
+      <img :src="thumb" :alt="title">
       <p class="title">{{ title }}</p>
       <p class="feature"> <b>Price:</b> {{ price }}</p>
       <p class="feature"> <b>Type:</b> {{ type }}</p>

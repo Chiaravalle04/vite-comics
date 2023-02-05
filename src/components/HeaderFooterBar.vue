@@ -1,11 +1,49 @@
 <script>
+import digital from "../assets/img/buy-comics-digital-comics.png";
+import merchandise from "../assets/img/buy-comics-merchandise.png";
+import subscriptions from "../assets/img/buy-comics-subscriptions.png";
+import shop from "../assets/img/buy-comics-shop-locator.png";
+import visa from "../assets/img/buy-dc-power-visa.svg";
+
 export default {
   name: 'HeaderFooterBar',
   
   data() {
   
     return {
-  
+      itemHeaderBar: [
+        {
+          src: digital,
+          url: '#',
+          title: 'digital comics',
+          smallImg: false
+        },
+        {
+          src: merchandise,
+          url: '#',
+          title: 'dc merchandise',
+          smallImg: false
+        },
+        {
+          src: subscriptions,
+          url: '#',
+          title: 'subscription',
+          smallImg: false
+        },
+        {
+          src: shop,
+          url: '#',
+          title: 'comics shop locator',
+          smallImg: true
+        },
+        {
+          src: visa,
+          url: '#',
+          title: 'dc power visa',
+          smallImg: false
+        }
+      ]
+      
     }
   },
 }
@@ -19,34 +57,10 @@ export default {
 
       <nav>
         <ul class="d-flex">
-          <li>
-            <a class="d-flex jc-center ai-center" href="#">
-              <img class="my-img" src="../assets/img/buy-comics-digital-comics.png" alt="">
-              <span>digital comics</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex jc-center ai-center" href="#">
-              <img class="my-img" src="../assets/img/buy-comics-merchandise.png" alt="">
-              <span>dc merchandise</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex jc-center ai-center" href="#">
-              <img class="my-img" src="../assets/img/buy-comics-subscriptions.png" alt="">
-              <span>subscription</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex jc-center ai-center" href="#">
-              <img id="img-min" src="../assets/img/buy-comics-shop-locator.png" alt="">
-              <span>comics shop locator</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex jc-center ai-center" href="#">
-              <img class="my-img" src="../assets/img/buy-dc-power-visa.svg" alt="">
-              <span>dc power visa</span>
+          <li v-for="item in itemHeaderBar">
+            <a class="d-flex jc-center ai-center" :href="item.url">
+              <img :class="{'my-img': item.smallImg == false, 'img-min': item.smallImg == true}" :src="item.src" alt="">
+              <span>{{ item.title }}</span>
             </a>
           </li>
         </ul>
@@ -77,7 +91,7 @@ header {
               width: 15%;
               margin-right: 15px;
             }
-            #img-min {
+            .img-min {
               width: 10%;
               margin-right: 15px;
             }

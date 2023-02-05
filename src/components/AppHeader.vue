@@ -9,43 +9,53 @@ export default {
         navHeader: [
             {
                 label: 'characters',
-                url: '#'
+                url: '#',
+                active: false,
             },
             {
                 label: 'comics',
-                url: '#'
+                url: '#',
+                active: true,
             },
             {
                 label: 'movies',
-                url: '#'
+                url: '#',
+                active: false,
             },
             {
                 label: 'tv',
-                url: '#'
+                url: '#',
+                active: false,
             },
             {
                 label: 'games',
-                url: '#'
+                url: '#',
+                active: false,
             },
             {
                 label: 'collectibles',
-                url: '#'
+                url: '#',
+                active: false,
             },
             {
                 label: 'videos',
-                url: '#'
+                url: '#',
+                active: false,
             },
             {
                 label: 'fans',
-                url: '#'
+                url: '#',
+                active: false,
             },
             {
                 label: 'news',
-                url: '#'
+                url: '#',
+                active: false,
             },
             {
                 label: 'shop',
-                url: '#'
+                url: '#',
+                active: false,
             },
         ]
   
@@ -69,7 +79,7 @@ export default {
             <div class="nav-bar d-flex ai-center">
                 <ul class="d-flex">
                     <li v-for="item in navHeader">
-                        <a :href="item.url">{{ item.label }}</a>
+                        <a :href="item.url" :class="{'active': item.active == true}">{{ item.label }}</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +93,7 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 100px;
-    background-color: #fff;
+    background-color: #fefffe;
     .general-container {
         .header-logo {
             width: 100px;
@@ -102,7 +112,7 @@ header {
                         padding: 38px 10px;
                         color: black;
                         font-weight: bold;
-                        &:hover {
+                        &.active {
                             border-bottom: 4px solid #0383f9;
                             color: #0383f9;
                         }

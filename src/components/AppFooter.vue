@@ -13,6 +13,118 @@ export default {
   data() {
   
     return {
+
+      dcComics: [
+        {
+          url: '#',
+          title: 'Characters'
+        },
+        {
+          url: '#',
+          title: 'Comics'
+        },
+        {
+          url: '#',
+          title: 'Movie'
+        },
+        {
+          url: '#',
+          title: 'Tv'
+        },
+        {
+          url: '#',
+          title: 'Games'
+        },
+        {
+          url: '#',
+          title: 'Videos'
+        },
+        {
+          url: '#',
+          title: 'News'
+        },
+      ],
+
+      shop: [
+        {
+          url: '#',
+          title: 'Shop DC'
+        },
+        {
+          url: '#',
+          title: 'Shop DC Collectibles'
+        },
+      ],
+
+      dc: [
+        {
+          url: '#',
+          title: 'Terms Of Use'
+        },
+        {
+          url: '#',
+          title: 'Privacy policy (New)'
+        },
+        {
+          url: '#',
+          title: 'Ad Choice'
+        },
+        {
+          url: '#',
+          title: 'Advertising'
+        },
+        {
+          url: '#',
+          title: 'Jobs'
+        },
+        {
+          url: '#',
+          title: 'Subscriptions'
+        },
+        {
+          url: '#',
+          title: 'Talent Workshops'
+        },
+        {
+          url: '#',
+          title: 'CPSC Certificates'
+        },
+        {
+          url: '#',
+          title: 'Ratings'
+        },
+        {
+          url: '#',
+          title: 'Shop Help'
+        },
+        {
+          url: '#',
+          title: 'Contact Us'
+        },
+      ],
+
+      sites: [
+        {
+          url: '#',
+          title: 'DC'
+        },
+        {
+          url: '#',
+          title: 'MAD Magazine'
+        },
+        {
+          url: '#',
+          title: 'DC Kids'
+        },
+        {
+          url: '#',
+          title: 'DC Universe'
+        },
+        {
+          url: '#',
+          title: 'DC Power Visa'
+        },
+      ]
   
     }
   }
@@ -36,26 +148,8 @@ export default {
               <li>
                 <h3>dc comics</h3>
               </li>
-              <li>
-                <a href="#">Characters</a>
-              </li>
-              <li>
-                <a href="#">Comics</a>
-              </li>
-              <li>
-                <a href="#">Movie</a>
-              </li>
-              <li>
-                <a href="#">Tv</a>
-              </li>
-              <li>
-                <a href="#">Games</a>
-              </li>
-              <li>
-                <a href="#">Videos</a>
-              </li>
-              <li>
-                <a href="#">News</a>
+              <li v-for="item in dcComics">
+                <a :href="item.url">{{ item.title }}</a>
               </li>
             </ul>
 
@@ -63,11 +157,8 @@ export default {
               <li>
                 <h3>shop</h3>
               </li>
-              <li>
-                <a href="#">Shop DC</a>
-              </li>
-              <li>
-                <a href="#">Shop DC Collectibles</a>
+              <li v-for="item in shop">
+                <a :href="item.url">{{ item.title }}</a>
               </li>
             </ul>
           </div>
@@ -77,38 +168,8 @@ export default {
               <li>
                 <h3>dc</h3>
               </li>
-              <li>
-                <a href="#">Terms Of Use</a>
-              </li>
-              <li>
-                <a href="#">Privacy policy (New)</a>
-              </li>
-              <li>
-                <a href="#">Ad Choice</a>
-              </li>
-              <li>
-                <a href="#">Advertising</a>
-              </li>
-              <li>
-                <a href="#">Jobs</a>
-              </li>
-              <li>
-                <a href="#">Subscriptions</a>
-              </li>
-              <li>
-                <a href="#">Talent Workshops</a>
-              </li>
-              <li>
-                <a href="#">CPSC Certificates</a>
-              </li>
-              <li>
-                <a href="#">Ratings</a>
-              </li>
-              <li>
-                <a href="#">Shop Help</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
+              <li v-for="item in dc">
+                <a :href="item.url">{{ item.title }}</a>
               </li>
             </ul>
           </div>
@@ -118,20 +179,8 @@ export default {
               <li>
                 <h3>sites</h3>
               </li>
-              <li>
-                <a href="#">DC</a>
-              </li>
-              <li>
-                <a href="#">MAD Magazine</a>
-              </li>
-              <li>
-                <a href="#">DC Kids</a>
-              </li>
-              <li>
-                <a href="#">DC Universe</a>
-              </li>
-              <li>
-                <a href="#">DC Power Visa</a>
+              <li v-for="item in sites">
+                <a :href="item.url">{{ item.title }}</a>
               </li>
             </ul>
           </div>

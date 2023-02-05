@@ -4,6 +4,9 @@
 // Font
 @use './partials/fonts.scss';
 
+// Variabili Colore
+@use './partials/variables.scss';
+
 // Regole Generali
 .general-container {
     width: 80%;
