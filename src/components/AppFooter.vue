@@ -202,6 +202,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/varcolor.scss' as *;
+
 main {
   height: 350px;
   background-image: url('../assets/img/footer-bg.jpg');
@@ -218,12 +220,12 @@ main {
         padding: 30px 30px 30px 0;
         h3 {
           text-transform: uppercase;
-          color: #eef1fc;
+          color: $secondColor;
           margin: 15px 0;
         }
         a {
           text-decoration: none;
-          color: #808c8a;
+          color: $linksTextFooter;
           font-size: 13px;
           &:hover {
             text-decoration: underline;

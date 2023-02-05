@@ -30,6 +30,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/varcolor.scss' as *;
+
 img {
   width: 100%;
 }
@@ -37,7 +39,7 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     padding-top: 10px;
-    color: #f4ece2;
+    color: $secondColor;
 }
 .feature {
     color: #787879;
@@ -50,8 +52,8 @@ img {
   margin: 0 auto;
   line-height: 40px;
   border: 0;
-  background-color: #0383f9;
-  color: #fff;
+  background-color: $mainColor;
+  color: $secondColor;
   position: absolute;
   bottom: 0;
   left: 0;

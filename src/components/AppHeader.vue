@@ -91,9 +91,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/varcolor.scss' as *;
+
 header {
     height: 100px;
-    background-color: #fefffe;
+    background-color: $secondColor;
     .general-container {
         .header-logo {
             width: 100px;
@@ -110,11 +112,11 @@ header {
                         text-transform: uppercase;
                         font-size: 10px;
                         padding: 38px 10px;
-                        color: black;
+                        color: $thirdColor;
                         font-weight: bold;
                         &.active {
-                            border-bottom: 4px solid #0383f9;
-                            color: #0383f9;
+                            border-bottom: 4px solid $mainColor;
+                            color: $mainColor;
                         }
                     }
                 }

@@ -69,18 +69,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/varcolor.scss' as *;
+
 footer {
     height: 100px;
-    background-color: #303131;
+    background-color: $footerColor;
     .general-container{
         .btn-sign {
             button {
                 display: inline-block;
                 padding: 15px;
-                border: 2px solid #0383f8;
+                border: 2px solid $mainColor;
                 background: none;
                 text-transform: uppercase;
-                color: #fff;
+                color: $secondColor;
                 font-weight: bold;
                 cursor: pointer;
             }
@@ -90,7 +92,7 @@ footer {
             ul {
                 height: 100%;
                 h3 {
-                    color: #0383f8;
+                    color: $mainColor;
                     margin-right: 10px;
                 }
                 a {

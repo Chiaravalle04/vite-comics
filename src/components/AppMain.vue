@@ -117,18 +117,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/varcolor.scss' as *;
+
 main {
   padding-top: 350px;
   min-height: 350px;
   background-image: url('../assets/img/jumbotron.jpg');
   background-size: contain;
   .container {
-    background-color: #1c1c1c;
+    background-color: $thirdColor;
     position: relative;
     .title-container {
       width: 250px;
       height: 50px;
-      background-color: #0383f9;
+      background-color: $mainColor;
       position: absolute;
       top: -25px;
       p {
@@ -141,7 +143,7 @@ main {
     }
     .general-container {
       padding: 40px 0;
-      background-color: #1c1c1c;
+      background-color: $thirdColor;
       .cards {
         width: 100%;
         flex-wrap: wrap;
@@ -159,8 +161,8 @@ main {
         width: 200px;
         height: 40px;
         margin: 0 auto;
-        background-color: #0383f9;
-        color: #fff;
+        background-color: $mainColor;
+        color: $secondColor;
         border: 0;
         font-weight: bold;
         cursor: pointer;

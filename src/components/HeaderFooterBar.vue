@@ -73,9 +73,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/varcolor.scss' as *;
+
 header {
   height: 130px;
-  background-color: #0383f9;
+  background-color: $mainColor;
   .general-container {
     nav {
       height: 100%;
@@ -86,7 +88,7 @@ header {
           a {
             width: 100%;
             height: 100%;
-            color: #ddeffe;
+            color: $secondColor;
             .my-img {
               width: 15%;
               margin-right: 15px;
